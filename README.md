@@ -12,7 +12,7 @@ FastDFS C# DevOps Sample with docker
 | nginx   | 10.4.52.14 | 7003  | group1,group2 |
 | nginx   | 10.4.52.17 | 7003  | group1,group2 |
 
-https://www.nuget.org/packages/FastDFSNetCore/
-https://github.com/caozhiyuan/FastDFSNetCore
+> https://www.nuget.org/packages/FastDFSNetCore/
+> https://github.com/caozhiyuan/FastDFSNetCore
 
-https://hub.docker.com/r/season/fastdfs
+> https://hub.docker.com/r/season/fastdfs
