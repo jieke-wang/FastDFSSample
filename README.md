@@ -19,3 +19,9 @@ FastDFS C# DevOps Sample with docker
 > https://github.com/caozhiyuan/FastDFSNetCore
 
 > https://hub.docker.com/r/season/fastdfs
+> 
+> https://github.com/happyfish100/fastdfs 
+
+![image](https://user-images.githubusercontent.com/12584587/115373678-afe94e80-a1fe-11eb-9db9-e663f19b4133.png)
+![image](https://user-images.githubusercontent.com/12584587/115373749-bed00100-a1fe-11eb-876b-8dabe664f2a5.png)
+![image](https://user-images.githubusercontent.com/12584587/115373776-c4c5e200-a1fe-11eb-8565-1c155fdfd817.png)
