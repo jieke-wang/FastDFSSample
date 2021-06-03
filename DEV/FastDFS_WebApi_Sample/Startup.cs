@@ -74,7 +74,7 @@ namespace FastDFS_WebApi_Sample
         {
             List<IPEndPoint> pEndPoints = new List<IPEndPoint>()
             {
-                new IPEndPoint(IPAddress.Parse("192.168.199.133"), 22122)
+                new IPEndPoint(IPAddress.Parse("192.168.199.143"), 22122)
             };
             ConnectionManager.Initialize(pEndPoints);
         }

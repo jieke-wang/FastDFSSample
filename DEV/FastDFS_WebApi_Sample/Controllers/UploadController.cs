@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 
 using FastDFS.Client;
 
@@ -35,6 +36,7 @@ namespace FastDFS_WebApi_Sample.Controllers
         [HttpGet("info/{**filename}")]
         public async Task<IActionResult> GetFileInfoAsync([FromRoute] string filename)
         {
+            filename = HttpUtility.UrlDecode(filename);
             //StorageNode storageNode = await FastDFSClient.GetStorageNodeAsync(NodeGroup);
             StorageNode storageNode = await FastDFSClient.GetStorageNodeAsync();
             FDFSFileInfo fileInfo = await FastDFSClient.GetFileInfoAsync(storageNode, filename);
@@ -45,6 +47,7 @@ namespace FastDFS_WebApi_Sample.Controllers
         [HttpGet("{**filename}")]
         public async Task<IActionResult> GetFileAsync([FromRoute] string filename)
         {
+            filename = HttpUtility.UrlDecode(filename);
             //StorageNode storageNode = await FastDFSClient.GetStorageNodeAsync(NodeGroup);
             StorageNode storageNode = await FastDFSClient.GetStorageNodeAsync();
             byte[] fileContent = await FastDFSClient.DownloadFileAsync(storageNode, filename);
@@ -55,6 +58,7 @@ namespace FastDFS_WebApi_Sample.Controllers
         [HttpDelete]
         public async Task<IActionResult> DeleteFileAsync([FromQuery] string filename)
         {
+            filename = HttpUtility.UrlDecode(filename);
             await FastDFSClient.RemoveFileAsync(NodeGroup, filename);
 
             return Ok();
